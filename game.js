@@ -3,8 +3,6 @@ var userClickedPattern=[""];
 var level=0;
 var started=false;
 
-//what happens when a key is pressed
-
 $("body").on("keydown",function(){
     if(!started){
         nextSequence();
@@ -12,8 +10,6 @@ $("body").on("keydown",function(){
         started=true;
     }
 });
-
-// $(<who reacts?>).on(<on which event?>, <what shall happen?>) {...
 
 //btn is clicked and an array stores the value of the button which was clicked
 
@@ -85,6 +81,3 @@ function startOver(){
     userClickedPattern=[];
     level=0;
 }
-// setTimeout(function () {
-//     console.log("Do this instead");
-//   }, 1000); after a dealy of 1000ms the fucntion gets executed
